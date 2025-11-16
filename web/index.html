@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>IFMC Launcher</title>
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#001F3F;--card:#002855;--text:#F8F9FA;--accent:#007BFF}
+    body{background:var(--bg);color:var(--text);font-family:'Inter',sans-serif;margin:0;padding:1rem}
+    .card{background:var(--card);border-radius:8px;padding:1.5rem;margin:1rem 0}
+    input,textarea{width:100%;padding:.75rem;margin:.5rem 0;border:1px solid #004085;border-radius:8px;background:#001F3F;color:var(--text)}
+    button{background:var(--accent);color:#fff;border:none;padding:.75rem 1.5rem;border-radius:8px;font-weight:600;cursor:pointer}
+    .spinner{border:2px solid #f3f3f3;border-top:2px solid #fff;border-radius:50%;width:16px;height:16px;animation:s .8s linear infinite;display:inline-block;margin-right:8px}
+    @keyframes s{to{transform:rotate(360deg)}}
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+</html>
